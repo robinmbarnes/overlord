@@ -1,0 +1,17 @@
+{% extends 'OverlordFrontendBundle::layout.html.twig' %}
+{% form_theme form 'OverlordCoreBundle:Form:fields.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Create a new account</h1>
+        <h2>Tell us about your company (1/2)</h2>
+        <form method="POST" action="" {{ form_enctype(form) }}>
+            {{ form_row(form.title, {'help': 'The name of your Company. This will be used to identify your account on the system.'}) }}
+            {{ form_row(form.email, {'help': 'A company email address which we can send account wide, non user specific service information too (like invoices, ect).'}) }}
+            {{form_rest(form)}}
+            <button class="btn btn-success" type="submit" name="submit">
+                <i class="icon-circle-arrow-right icon-white"></i> Next stage
+            </button>
+        </form>
+    </div>
+{% endblock %}

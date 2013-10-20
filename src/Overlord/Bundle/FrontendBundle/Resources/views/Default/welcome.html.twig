@@ -1,0 +1,32 @@
+{% extends 'OverlordFrontendBundle::layout.html.twig' %}
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="hero-unit">
+                    <h1>Overlord</h1>
+                    <h2>
+                        Overlord is a simple, web based project managament app that helps projects stay on track.
+                    </h2>
+                </div><!-- .hero-unit -->
+            </div>
+        </div><!-- .row -->
+        <div class="row">
+            <div class="span6 info-box info-box-left">
+                <h3>Features</h3>
+                <ul>
+                    <li>Lorem Ipsum</li>
+                    <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</li>
+                    <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</li>
+                    <li>Et harum quidem rerum facilis est et expedita distinctio</li>
+                </ul>
+            </div>
+            <div class="span6 info-box info-box-right">
+                <h3>Get started with Overlord</h3>
+                <a href="{{path('frontend_signup_company')}}" class="btn btn-success"><i class="icon-circle-arrow-right icon-white"></i> Create your account now</a>
+                <p>Already a member? <a href="#">Log in now</a></p>
+            </div>                
+        </div>
+    </div><!-- .row -->
+    </div><!-- #content -->
+{% endblock %}

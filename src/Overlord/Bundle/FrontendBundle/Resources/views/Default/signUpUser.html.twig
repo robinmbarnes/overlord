@@ -1,0 +1,19 @@
+{% extends 'OverlordFrontendBundle::layout.html.twig' %}
+{% form_theme form 'OverlordCoreBundle:Form:fields.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Create a new account</h1>
+        <h2>Create and Admin user for your company (2/2)</h2>
+        <form method="POST" action="" {{ form_enctype(form) }}>
+            {{ form_row(form.email, {'help': 'Your email address. You will use this to login, and to receive correspondence from the system. Must be unqiue for your company.'}) }}
+            {{ form_row(form.screenName, {'help': 'Your name as it appears on the system. Must be unique to your company.'}) }}
+            {{ form_row(form.password.password, {'help': 'Maximum of 10 characters.'}) }}
+            {{ form_row(form.password.confirm, {'help': 'Re-enter password for confirmation.'}) }}
+            {{form_rest(form)}}
+            <button class="btn btn-success" type="submit" name="submit">
+                <i class="icon-circle-arrow-right icon-white"></i> Next stage
+            </button>
+        </form>
+    </div>
+{% endblock %}

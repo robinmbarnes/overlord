@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% stylesheets 'bundles/overlordfrontend/css/bootstrap/bootstrap.less' 
+        'bundles/overlordfrontend/css/master.less'
+        filter="cssrewrite" %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+    {% block customCss %}{% endblock %}
+    {% block customJs %}{% endblock %}
+  </head>
+  <body>
+      {% block body %}{% endblock %}
+  </body>
+</html>
+

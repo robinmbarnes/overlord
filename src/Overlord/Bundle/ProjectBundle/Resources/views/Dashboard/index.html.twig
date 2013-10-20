@@ -1,0 +1,71 @@
+{% extends 'OverlordProjectBundle::layout.html.twig' %}
+{% block body %}
+
+<div class="container">
+    <div class="page-header">
+        <h1>Dashboard</h1>
+    </div>
+    <h2>Recent activity</h2>
+        <ul class="activities">
+            <li>
+                <div>Added task: <a href="#">Make create client form appear in popup</a></div>
+                <div>@ 23/01/12 14:23 by <a href="#">Robin</a> on <a href="#">Content Wire</a></div>
+            </li>
+            <li>
+                <div>Added task: <a href="#">Add all active campaigns to the bottom of the dashboard</a></div>
+                <div>@ 23/01/12 14:27 by <a href="#">Dave</a> on <a href="#">Futurestep</a></div>
+            </li>
+        </ul>
+    <div class="row">
+        <div class="span6">
+            <h3>My next tasks</h3>
+            <ul class="tasks">
+                <li class="task-overdue"><a href="#">Add basket to every page</a> <span>in</span> <a href="#">Contentwire</a></li>
+                <li class="task-today"><a href="#">Make create client form open in a popup (for will have to be within iFrame in popup) </a> <span>in</span> <a href="#">Contentwire</a></li>
+                <li><a href="#">Changes to signoff page </a> <span>in</span> <a href="#">Contentwire</a></li>
+            </ul>
+        </div>
+        <div class="span6">
+            <div class="buttoned-header">
+                <h3>My Projects</h3>
+            </div>
+            <ul class="projects">
+                <li>
+                    <a href="#">
+                        <div class="img-rounded" id="create-project-placeholder">
+                            <span>&#43;</span>
+                        </div>
+                        <div>
+                            <span>Create a new project</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-rounded" src="holder.js/140x140" alt="Contentwire" />
+                        <div>
+                            <span>Contentwire Delivery Network <span class="badge badge-info">2</span></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-rounded" src="holder.js/140x140" alt="Futurestep" />
+                        <div>
+                            <span>Futurestep <span class="badge badge-info">7</span></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-rounded" src="holder.js/140x140" alt="Experian" />
+                        <div>
+                            <span>Experian</span> <span class="badge badge-info">23</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<div>
+{% endblock %}
